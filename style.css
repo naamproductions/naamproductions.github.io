@@ -2092,6 +2092,30 @@ input[type=range].form-range::-webkit-slider-thumb:hover {
     padding: 0 1.5rem;
   }
   
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .service-card {
+    padding: 2.2rem 1.5rem;
+  }
+  
+  .location-details-card {
+    padding: 1.5rem;
+  }
+  
+  .location-actions {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .location-actions .btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
+  }
+  
   section {
     padding: 5rem 0;
   }
@@ -2216,5 +2240,56 @@ input[type=range].form-range::-webkit-slider-thumb:hover {
   
   .whatsapp-label {
     display: none; /* Hide label on mobile to avoid screen crowding */
+  }
+}
+
+/* Mobile screens (down to 320px / iPhone SE / 480px support) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .location-details-card {
+    padding: 1.2rem 1rem;
+  }
+  
+  .service-card {
+    padding: 2rem 1rem;
+  }
+  
+  .booking-container {
+    padding: 2rem 1.2rem;
+  }
+  
+  /* Location Section specific overrides to prevent cutoff */
+  .location-info-panel h3 {
+    font-size: 1.65rem !important;
+  }
+  
+  .location-info-panel p {
+    font-size: 0.85rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  .location-item-text p,
+  .location-item-text a {
+    font-size: 0.82rem !important;
+    word-break: break-all !important;
+  }
+  
+  .location-actions a {
+    font-size: 0.65rem !important;
+    padding: 0.7rem 1rem !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .location-map-panel {
+    height: 280px !important; /* scales map height down for proportional viewing */
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
