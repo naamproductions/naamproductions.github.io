@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Naam Productions | Luxury Event Production, Live Shows & AVL Solutions</title>
+  <meta name="description" content="Naam Productions is a premium event production company specializing in luxury stage shows, concert AVL solutions, special effects (SFX), artist management, and custom sound experiences. Where sound, light, and performance become an experience.">
+  <meta name="keywords" content="event production, luxury events, stage production, AVL solutions, SFX, light show, artist management, concert sound, Naam Productions">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/logo.jpg" type="image/x-icon">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons for footer and socials -->
+  <script src="https://kit.fontawesome.com/ce4c65306e.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+     1. CINEMATIC LOADING SCREEN
+     ========================================================================== -->
+  <div id="loader">
+    <div class="loader-container">
+      <div class="loader-logo-wrapper">
+        <div class="loader-ring"></div>
+        <img src="assets/logo.jpg" alt="Naam Productions Logo" class="loader-logo">
+      </div>
+      <div class="loader-text">NAAM PRODUCTIONS</div>
+      <div class="loader-bar-bg">
+        <div class="loader-bar-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+     2. STICKY NAVBAR
+     ========================================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo-link">
+        <img src="assets/logo.jpg" alt="Naam Logo" class="nav-logo-img">
+        <span class="nav-logo-text">NAAM</span>
+      </a>
+      
+      <ul class="nav-menu">
+        <li class="nav-item active"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#services">Services</a></li>
+        <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a href="#artists">Artists</a></li>
+        <li class="nav-item"><a href="#location">Location</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
+      
+      <a href="#contact" class="nav-cta">Book An Event</a>
+      
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav">
+    <ul class="mobile-menu">
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#services" class="mobile-link">Services</a></li>
+      <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+      <li><a href="#artists" class="mobile-link">Artists</a></li>
+      <li><a href="#location" class="mobile-link">Location</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--text-gray-muted);">Connect With Us</p>
+      <div class="mobile-nav-socials">
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/919633767691" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:info@naamproductions.com"><i class="far fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+     3. HERO SECTION
+     ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="hero-video-container">
+      <video class="hero-video" autoplay loop muted playsinline id="hero-bg-video">
+        <!-- Direct highly-optimized concert production loop -->
+        <source src="https://player.vimeo.com/external/498264771.hd.mp4?s=d0fc38d97be58b68832a8ebcf858ef9c7cd41cfc&profile_id=174" type="video/mp4">
+      </video>
+    </div>
+    
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <div class="hero-logo-box">
+        
+      </div>
+      
+      <h1 class="hero-title">
+        Where Sound, Light <span>& Performance Become Experience</span>
+      </h1>
+      
+      <div class="hero-subtitles">
+        <span class="hero-subtitle-item">Stage Shows</span>
+        <span class="hero-subtitle-item">AVL Solutions</span>
+        <span class="hero-subtitle-item">SFX & Rigging</span>
+        <span class="hero-subtitle-item">Artist Management</span>
+        <span class="hero-subtitle-item">DJs & Bands</span>
+      </div>
+      
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Book An Event</a>
+        <a href="#portfolio" class="btn btn-secondary">Explore Productions</a>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator" id="scroll-btn">
+      <span>Scroll Down</span>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     4. SERVICES SECTION
+     ========================================================================== -->
+  <section class="bg-charcoal" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Excellence In Execution</span>
+        <h2 class="section-title">What We <span>Deliver</span></h2>
+      </div>
+      
+      <div class="services-grid reveal-stagger">
+        <!-- Card 1: Stage Show Production -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <!-- Customized SVG Icon for Stage -->
+            <svg viewBox="0 0 24 24">
+              <path d="M4 19h16M2 19V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v14M12 3v16M8 3v5c0 .6.4 1 1 1h6c.6 0 1-.4 1-1V3M4 13h16" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Stage Show Production</h3>
+          <p class="service-card-desc">End-to-end management of stadium and theater scale live shows, mapping custom stage architectures, rigging, and synchronized live choreography.</p>
+          <a href="#contact" class="service-link">
+            Inquire Details
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 2: AVL Solutions -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <!-- Customized SVG Icon for Sound/Light AVL -->
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2v20M17 5v14M22 9v6M7 7v10M2 10v4" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">AVL Solutions</h3>
+          <p class="service-card-desc">State-of-the-art concert Audio, Visual, and intelligent Lighting systems. Designed for crystal acoustics and mesmerizing optical experiences.</p>
+          <a href="#contact" class="service-link">
+            Inquire Details
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 3: SFX & Special Effects -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <!-- Customized SVG Icon for SFX -->
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">SFX & Effects</h3>
+          <p class="service-card-desc">Premium atmospheric additions including cold pyros, synchronized flame jets, high-power lasers, fog screens, and confetti drops for high impact.</p>
+          <a href="#contact" class="service-link">
+            Inquire Details
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 4: Artist Management -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <!-- Customized SVG Icon for Management -->
+            <svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Artist Management</h3>
+          <p class="service-card-desc">Exclusive booking and management of top-tier artists, performers, host anchors, and musicians to ensure absolute luxury alignments.</p>
+          <a href="#contact" class="service-link">
+            Inquire Details
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 5: Live Music Bands -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <!-- Customized SVG Icon for Music Band -->
+            <svg viewBox="0 0 24 24">
+              <path d="M9 18V5l12-2v13M9 10l12-2M9 21a3 3 0 1 1-6-3 3 3 0 0 1 6 3zm12-3a3 3 0 1 1-6-3 3 3 0 0 1 6 3z" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">Live Music Bands</h3>
+          <p class="service-card-desc">Sourcing and coordinating world-class instrumentalists, orchestral setups, fusion ensembles, and luxury bands for exclusive events.</p>
+          <a href="#contact" class="service-link">
+            Inquire Details
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- Card 6: DJ Performances -->
+        <div class="service-card">
+          <div class="service-icon-box">
+            <!-- Customized SVG Icon for DJs -->
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10" />
+            </svg>
+          </div>
+          <h3 class="service-card-title">DJ Performances</h3>
+          <p class="service-card-desc">Curation of premium electronic setups, internationally-renowned club DJs, custom visual jockey mappings, and luxury audio drops.</p>
+          <a href="#contact" class="service-link">
+            Inquire Details
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     5. PORTFOLIO & SHOWREEL SECTION
+     ========================================================================== -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Visual Showreel</span>
+        <h2 class="section-title">Cinematic <span>Productions</span></h2>
+      </div>
+      
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid reveal-stagger">
+        <!-- Item 1 (Concert) -->
+        <div class="portfolio-item" data-category="experience" data-title="Epic Arena Stage" data-desc="Complete arena sound, light rigging, and custom SFX mapping for 15,000+ attendees." data-media="https://res.cloudinary.com/dv91f9mim/video/upload/AQNLc1h0_HSgrQNsvRmvQ3FQMzfjOtskGQdeSvKGtR6pPVMHmTE45WeE27ENKeOIPxCU3CSvmDIvq_9h7oqTXu9K_tpfpel.mp4">
+          <div class="portfolio-media-wrapper">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://res.cloudinary.com/dv91f9mim/video/upload/AQNLc1h0_HSgrQNsvRmvQ3FQMzfjOtskGQdeSvKGtR6pPVMHmTE45WeE27ENKeOIPxCU3CSvmDIvq_9h7oqTXu9K_tpfpel.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!-- Item 2 (Festival) -->
+        <div class="portfolio-item" data-category="experience" data-title="Solaris Music Festival" data-desc="Custom scenic construction, grand MA design, and pyro sync at Solaris Mainstage." data-media="https://res.cloudinary.com/dv91f9mim/video/upload/AQMiMa_xYtlZb_kxKvOnbKbRWVpHR7Y0T6xe6LohdiPzaFrCkuGcKTOMvYigAIMOHbl0HxApB8SaRHFMLeWH6FnP_lql68s.mp4">
+          <div class="portfolio-media-wrapper">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://res.cloudinary.com/dv91f9mim/video/upload/AQMiMa_xYtlZb_kxKvOnbKbRWVpHR7Y0T6xe6LohdiPzaFrCkuGcKTOMvYigAIMOHbl0HxApB8SaRHFMLeWH6FnP_lql68s.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!-- Item 3 (Corporate) -->
+        <div class="portfolio-item" data-category="experience" data-title="Global Brand Gala" data-desc="Premium kinetic light structures and projection mapping for a high-end luxury brand unveil." data-media="https://res.cloudinary.com/dv91f9mim/video/upload/AQPyiZXNxT1UOwape81chU8P-OgeI8OZNwYwhfXlJ2ybBz2ruw_bHJyOJyPdBEhaLVFlyyirR6pXxKCnSiLEcIa0Z42Q24QP_AHtlCU_d1t157.mp4">
+          <div class="portfolio-media-wrapper">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://res.cloudinary.com/dv91f9mim/video/upload/AQPyiZXNxT1UOwape81chU8P-OgeI8OZNwYwhfXlJ2ybBz2ruw_bHJyOJyPdBEhaLVFlyyirR6pXxKCnSiLEcIa0Z42Q24QP_AHtlCU_d1t157.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <!-- Item 4 (Concert) -->
+        <div class="portfolio-item" data-category="experience" data-title="SoundWave Showcase" data-desc="High-density subwoofer layout, custom rigging designs, and massive fire-jets synchronization." data-media="https://res.cloudinary.com/dv91f9mim/video/upload/AQMj7jzLXjDrXii_hM2-CJdiXp4_CZH4Oq7QpVONIcZNWLBS6cH4ZYEhjgqOsgZTsZG2wp6Mw8Y-QO2JxLsRH5TcfSxMzpaq-G6q8Hk_qby02c.mp4">
+          <div class="portfolio-media-wrapper">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://res.cloudinary.com/dv91f9mim/video/upload/AQMj7jzLXjDrXii_hM2-CJdiXp4_CZH4Oq7QpVONIcZNWLBS6cH4ZYEhjgqOsgZTsZG2wp6Mw8Y-QO2JxLsRH5TcfSxMzpaq-G6q8Hk_qby02c.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Portfolio Lightbox Modal -->
+  <div class="lightbox" id="portfolio-lightbox">
+    <button class="lightbox-close" id="lightbox-close-btn">&times;</button>
+    <div class="lightbox-content-box">
+      <div class="lightbox-media" id="lightbox-media-container">
+        <!-- Media (Image or Video) is dynamically injected here by script.js -->
+      </div>
+      <div class="lightbox-details">
+        <span class="lightbox-category" id="lightbox-cat">Category</span>
+        <h3 class="lightbox-title" id="lightbox-title">Project Title</h3>
+        <p class="lightbox-desc" id="lightbox-desc">Detailed project description goes here outlining our stage rigging and light shows.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+     6. ARTISTS & PARTNERS SECTION
+     ========================================================================== -->
+  <section class="bg-charcoal" id="artists">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Exclusive Collaborations</span>
+        <h2 class="section-title">Industry <span>Partners & Artists</span></h2>
+      </div>
+    </div>
+    <div class="container">
+      <!-- Artist Roster Grid -->
+      <div class="artists-grid reveal-stagger" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); justify-content: center; max-width: 800px; margin-left: auto; margin-right: auto;">
+        <!-- Artist 1: Mozhi -->
+        <a href="https://www.instagram.com/mozhi._official/" target="_blank" class="artist-card">
+          <div class="artist-img-box">
+            <img src="assets/moz.jpg" alt="Mozhi Live Music Ensemble Logo" loading="lazy">
+          </div>
+          <div class="artist-info">
+            <span class="artist-role">Live Music Ensemble</span>
+            <h3 class="artist-name">Mozhi <span style="font-size:0.85rem; opacity:0.7; margin-left:0.5rem;"><i class="fab fa-instagram"></i></span></h3>
+          </div>
+        </a>
+
+        <!-- Artist 2: Devananda Collective -->
+        <a href="https://www.instagram.com/devanandacollective/" target="_blank" class="artist-card">
+          <div class="artist-img-box">
+            <img src="assets/db.jpg" alt="Devananda Collective Logo" loading="lazy">
+          </div>
+          <div class="artist-info">
+            <span class="artist-role">Live Vocal & Acoustic Collective</span>
+            <h3 class="artist-name">Devananda Collective <span style="font-size:0.85rem; opacity:0.7; margin-left:0.5rem;"><i class="fab fa-instagram"></i></span></h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     7. OFFICE LOCATION SECTION
+     ========================================================================== -->
+  <section id="location">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Office</span>
+        <h2 class="section-title">Visit Our <span>Office</span></h2>
+      </div>
+      
+      <div class="location-grid reveal">
+        <!-- Location details -->
+        <div class="location-info-panel">
+          <h3 style="font-size: 2rem; font-weight: 300; margin-bottom: 1rem;">Experience Naam <span>Firsthand</span></h3>
+          <p style="color: var(--text-gray-light); font-weight:300; font-size:0.95rem; line-height:1.7;">Step inside our state-of-the-art AVL showroom and consultation suite to preview our audio arrays, holographic light renders, and discuss staging layouts for your next luxury event.</p>
+          
+          <div class="location-details-card">
+            <!-- Office Address -->
+            <div class="location-item">
+              <div class="location-item-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+              </div>
+              <div class="location-item-text">
+                <h4>office</h4>
+                <p> Naam Productions <br>Perumanna Oorkkadavu Road<br>Kerala 673661, India
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact -->
+            <div class="location-item">
+              <div class="location-item-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="location-item-text">
+                <h4>Call & Inquiries</h4>
+                <p><a href="tel:+91 9633767691">+91 9633767691</a><br><a href="mailto:naamproductions786@gmail.com">naamproductions786@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="location-actions">
+            <!-- Redirect maps actions -->
+            <a href="https://maps.app.goo.gl/syYHgd6hfEarxYky5" target="_blank" class="btn btn-primary btn-sm">Open in Google Maps</a>
+            <a href="https://maps.app.goo.gl/syYHgd6hfEarxYky5" target="_blank" class="btn btn-secondary btn-sm">Get Directions</a>
+          </div>
+        </div>
+
+        <!-- Styled Dark Mode Map Container -->
+        <div class="location-map-panel">
+          <div class="map-iframe-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15652.797518028618!2d75.91912454869073!3d11.24673867497644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba645ee163667a7%3A0x8099dca44746e6a9!2sNAAM%20PRODUCTIONS!5e0!3m2!1sen!2sin!4v1779520486880!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     8. INQUIRY / BOOKING SECTION
+     ========================================================================== -->
+  <section class="bg-charcoal" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Secure Your Date</span>
+        <h2 class="section-title">Design Your <span>Experience</span></h2>
+      </div>
+      
+      <div class="booking-container reveal">
+        <form class="booking-form" id="bookingForm" novalidate>
+          <!-- Name -->
+          <div class="form-group">
+            <input type="text" id="form-name" class="form-input" placeholder=" " required>
+            <label for="form-name" class="form-label">Full Name *</label>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="form-group">
+            <input type="tel" id="form-phone" class="form-input" placeholder=" " required>
+            <label for="form-phone" class="form-label">Phone Number *</label>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <input type="email" id="form-email" class="form-input" placeholder=" " required>
+            <label for="form-email" class="form-label">Email Address *</label>
+          </div>
+
+          <!-- Event Type -->
+          <div class="form-group">
+            <select id="form-type" class="form-input" required>
+              <option value="" disabled selected hidden></option>
+              <option value="Music Festival">Massive Music Festival</option>
+              <option value="Luxury Gala">Luxury Gala / Award Show</option>
+              <option value="Private Staging">Private Luxury Staging</option>
+              <option value="Other">Other Custom Event</option>
+            </select>
+            <label for="form-type" class="form-label">Event Type *</label>
+          </div>
+
+          <!-- Event Date -->
+          <div class="form-group">
+            <input type="date" id="form-date" class="form-input" placeholder=" " required>
+            <label for="form-date" class="form-label">Event Date *</label>
+          </div>
+
+          <!-- Event Location -->
+          <div class="form-group">
+            <input type="text" id="form-location" class="form-input" placeholder=" " required>
+            <label for="form-location" class="form-label">Event Location *</label>
+          </div>
+
+          <!-- Budget Range Slider -->
+          <div class="form-group form-full-width budget-slider-container">
+            <label style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.15em; color:var(--text-gray-muted); margin-bottom:0.5rem; display:block;">Estimated Production Budget *</label>
+            <input type="range" id="form-budget" class="form-range" min="0" max="500000" step="10000" value="50000">
+            <div class="budget-val-box">
+              <span>Min: ₹0</span>
+              <span style="color:#ffffff; font-weight:500; font-size:0.95rem;" id="budget-current">₹0</span>
+              <span>Max: ₹500,000+</span>
+            </div>
+          </div>
+
+          <!-- Requirements Text -->
+          <div class="form-group form-full-width">
+            <textarea id="form-reqs" class="form-input" placeholder=" " rows="4"></textarea>
+            <label for="form-reqs" class="form-label">Production Requirements (AVL, SFX, Staging size, etc.)</label>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="form-submit-box">
+            <button type="submit" class="btn btn-primary form-btn">Initiate Briefing</button>
+          </div>
+        </form>
+        
+        <!-- Form Success Animation Screen overlay -->
+        <div class="form-success-overlay" id="formSuccess">
+          <div class="success-icon-box">
+            <svg viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="success-title">Briefing Received</h3>
+          <p class="success-desc">An elite production manager will review your AVL and staging scope and connect via phone or email in under 24 hours.</p>
+          <button class="btn btn-secondary btn-sm" style="margin-top:2rem;" onclick="resetBookingForm()">Submit Another Brief</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==========================================================================
+     10. FOOTER
+     ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Panel -->
+        <div class="footer-brand-panel">
+          <a href="#home" class="footer-logo-link">
+            <img src="assets/logo.jpg" alt="Naam Productions Logo" class="footer-logo-img">
+            <span class="footer-logo-text">NAAM</span>
+          </a>
+          <p class="footer-desc">Curating world-class concerts, architectural stage shows, premium AVL solutions, and luxury live stage experiences worldwide. Trusted for precision.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/naam_productions_/" target="_blank" class="footer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919633767691" target="_blank" class="footer-social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:naamproductions786@gmail.com" class="footer-social-link" aria-label="Email"><i class="far fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-nav-panel">
+          <div>
+            <h4 class="footer-panel-title">Naam Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Stage Show Staging</a></li>
+              <li><a href="#services">Acoustic AVL Design</a></li>
+              <li><a href="#services">Rigging & Laser SFX</a></li>
+              <li><a href="#services">Premium Artist Booking</a></li>
+              <li><a href="#services">DJs & Orchestra Bands</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-panel-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Our Portfolio</a></li>
+              <li><a href="#artists">Our Artists</a></li>
+              <li><a href="#location">Office Location</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact details -->
+        <div class="footer-contact-panel">
+          <h4 class="footer-panel-title">Secure a Booking</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <strong style="color:#ffffff;">Naam HQ</strong><br>
+              Perumanna Oorkkadavu Road,<br>
+              Kozhikode, Kerala 673661, India
+            </li>
+            <li>
+              <strong style="color:#ffffff;">Direct Helpline</strong><br>
+              <a href="tel:+919633767691">+91 9633767691</a>
+            </li>
+            <li>
+              <strong style="color:#ffffff;">Electronic Mail</strong><br>
+              <a href="mailto:naamproductions786@gmail.com">naamproductions786@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Naam Productions LLC. All Rights Reserved. Crafted for cinematic stage luxury.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Safety Credentials</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Premium WhatsApp Action Button Widget -->
+  <a href="https://wa.me/919633767691?text=Hello%20Naam%20Productions%2C%20I%20would%20like%20to%20discuss%20an%20upcoming%20event%20booking." class="whatsapp-widget" target="_blank">
+    <div class="whatsapp-label">Chat with Producer</div>
+    <div class="whatsapp-icon-btn">
+      <svg viewBox="0 0 24 24">
+        <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.37 5.054L2 22l5.077-1.33a9.92 9.92 0 0 0 4.93 1.302c5.506 0 9.99-4.478 9.99-9.985A9.99 9.99 0 0 0 12.012 2zm5.799 14.175c-.25.7-1.442 1.282-1.996 1.353-.518.067-1.196.126-3.415-.8-2.836-1.183-4.636-4.048-4.778-4.238-.142-.19-1.15-1.528-1.15-2.917 0-1.389.724-2.072 0.982-2.342.259-.27.568-.338.758-.338.19 0 .379.002.543.01.173.008.406-.065.635.485.23.55.787 1.916.855 2.052.068.136.113.294.022.476-.09.182-.136.295-.272.453-.136.159-.286.353-.408.475-.136.136-.28.284-.12.56.16.273.71 1.17 1.523 1.895.836.745 1.536.974 1.753 1.082.217.108.345.09.474-.055.129-.146.568-.66.72-.885.153-.227.306-.19.518-.113.212.077 1.344.634 1.576.748.232.113.387.17.444.27.057.1.057.578-.193 1.278z"/>
+      </svg>
+    </div>
+  </a>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
