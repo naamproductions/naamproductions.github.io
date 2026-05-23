@@ -954,17 +954,10 @@ section {
   transition: var(--transition-smooth);
 }
 
-/* Create a modern irregular grid layout for 4 items */
-.portfolio-item:nth-child(1),
-.portfolio-item:nth-child(4) {
+/* Custom Wide Portfolio Item Override */
+.portfolio-item.portfolio-item-wide {
   grid-column: span 8;
-  aspect-ratio: 16 / 10;
-}
-
-.portfolio-item:nth-child(2),
-.portfolio-item:nth-child(3) {
-  grid-column: span 4;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 16 / 9;
 }
 
 .portfolio-media-wrapper {
